@@ -1,0 +1,127 @@
+body {
+background-color: #CCDBEB;
+margin: 0;
+overflow: hidden;
+font-family: "Arial" Helvetica sans-serif;
+}
+#header, #nav, #footer {
+width: 100%;
+overflow: hidden;
+}
+div#header {
+height: 24px;
+position: absolute;
+top: 0px;
+left: 0px;
+background-color: #104073;
+border: 0 0 1px 0;
+border-color: #ffffff;
+color: #ffffff;
+}
+div#nav {
+height: 44px;
+position: absolute;
+top: 25px;
+left: 0px;
+background-color: #5989BD;
+border: 0 0 1px 0;
+border-color: #ffffff;
+border-left: 0;
+border-right: 0;
+}
+div#footer {
+height: 24px;
+position: absolute;
+bottom: 0px;
+left: 0px;
+background-color: #104073;
+border: 1px 0 0 0;
+border-color: #ffffff;
+color: #ffffff;
+}
+div#left_pane {
+top: 0px;
+left: 0px;
+}
+div#center_pane {
+top: 0px;
+}
+div#right_pane {
+top: 0px;
+right: 0px;
+}
+#left_pane, #right_pane, #center_pane {
+position: absolute;
+border: 1px solid #104073;
+background-color: #ffffff;
+overflow: auto;
+padding: 5px;
+margin: 0px;
+}
+span#logo {
+color: #ffffff;
+font-size: 32px;
+position: absolute;
+//top: 5px;
+left: 10px;
+}
+span#quick_links {
+position: absolute;
+left: 10px;
+}
+span#copyright {
+position: absolute;
+right: 10px;
+}
+span#word_of_day {
+position: absolute;
+left: 10px;
+}
+span#user_access {
+position: absolute;
+right: 10px;
+}
+#quick_links, #copyright, #word_of_day, #user_access {
+font-size: 12px;
+}
+p {
+margin: 10px;
+}
+.widgetbox .title {
+cursor: pointer;
+}
+.widgetbox {
+margin: 0 0 10px 0;
+}
+dt {
+font-weight: bold;
+margin: 10px 0 0 10px;
+}
+ol {
+margin: 0 0 10px 20px;
+}
+#navtabs {
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
+#navtabs button {
+border-bottom: 0px;
+margin-bottom: 0px;
+}
+button {
+cursor: pointer;
+}
+div#tab_container {
+position: absolute;
+top: 70px;
+left: 0px;
+width: 1440px;
+height:800px;
+border: 0;
+padding: 0;
+margin: 0;
+}
+.updown, .close {
+float: right;
+}

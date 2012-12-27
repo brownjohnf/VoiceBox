@@ -1,0 +1,52 @@
+<?php
+
+include ('head.inc');
+
+?>
+<body>
+	<div id="header">
+		<span id="word_of_day">The word of the day is: mbaal</span>
+		<span id="user_access">0 Users currently online | Login</span>
+	</div>
+	<div id="nav" class="ui-widget-header">
+		<span id="logo">VoiceBox: Keeping Language Alive</span>
+		<div id="navtabs">
+				<button title="index">Home</button>
+				<button title="dictionary">Dictionary</button>
+				<button title="vocab">My Vocab</button>
+				<button title="blog">Blog</button>
+				<button title="community">Community</button>
+				<button title="grammar">Grammar Guides</button>
+		</div>
+	</div>
+			<div id="tab_container">
+			<div id="left_pane" class="column">
+				
+			</div>
+			<div id="center_pane" class="column">
+				<div class="widgetbox">
+					<div class="title">Welcome!</div>
+					<div class="contents"><p>Welcome to the brand new Lingua-Links online language tool. Here you will find language tools and resources to fuel your project, whatever that may be. Lingua-Link is a project of Peace Corps Senegal, but designed to be a tool for curious parties the world over. Whatever you field, whatever your interests, you're bound to find something here.</p></div>
+				</div>
+				<div class="widgetbox">
+					<div class="title">Get Involved</div>
+					<div class="contents"><p>If you'd like to get involved with the project, contact Jack for more info.</p></div>
+				</div>
+			</div>
+			<div id="right_pane" class="column">
+				<div class="widgetbox">
+					<div class="title">News</div>
+					<div class="contents">
+						<p>News item 1</p>
+						<p>News item 2</p>
+					</div>
+				</div>
+			</div>
+			</div>
+	
+	<div id="footer">
+		<span id="quick_links">My Account | Contact Us | Technical Info | Quick Menu | Help</span>
+		<span id="copyright">Copyright Peace Corps Senegal (dic v3.0)</span>
+	</div>
+</body>
+</html>

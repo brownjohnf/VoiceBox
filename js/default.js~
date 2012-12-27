@@ -1,0 +1,58 @@
+$(function () {
+	setColumns(3,.3,.5,.2,5,1,0,5);
+	$(window).resize(function () {
+		setColumns(3,.3,.5,.2,5,1,0,5);
+	});
+	$(".column").addClass("ui-corner-all");
+	$(".widgetbox").addClass("ui-widget-content ui-corner-all");
+	$(".widgetbox div.title").addClass("ui-widget-header");
+	$(".widgetbox .widget_buttons updown").click(function(){
+		if ($(this).siblings("div.contents").is(":hidden")) {
+			$(this).siblings("div.contents").slideDown("medium");
+			$(this).removeClass("ui-icon-circle-triangle-e").addClass("ui-icon-circle-triangle-s");
+		} else {
+			$(this).siblings("div.contents").slideUp("medium");
+		}
+	});
+	$("body").addClass("ui-widget");
+	$("#navtabs button").addClass("ui-widget-clear").addClass("ui-widget-header ui-corner-top");
+	$("button").click(function(){
+		var linkCommand = $(this).attr("title");
+		$linkCommand ();
+		$("#left_pane").slideUp().html(linkCommand).slideDown();
+		//alert(linkCommand);
+	});
+	$(".widgetbox .widget_buttons close").click(function(){
+		$(this).closest(".widgetbox").slideUp();
+	});
+	$("updown").addClass("ui-icon ui-icon-circle-triangle-s");
+	$("close").addClass("ui-icon ui-icon-circle-close");
+});
+function home () {
+	alert("home");
+}
+
+function setColumns (columnCount,a,b,c,spacingWidth,borderWidth,marginWidth,paddingWidth) {
+	var browserWidth = $(window).width();
+	var browserHeight = $(window).height();
+	var bufferWidth = ( borderWidth + marginWidth + paddingWidth ) * 2;
+	var left_paneWidth = browserWidth * a - bufferWidth - spacingWidth * 2;
+	var center_paneWidth = browserWidth * b - bufferWidth;
+	var right_paneWidth = browserWidth * c - bufferWidth - spacingWidth * 2;
+	
+	var tab_containerHeight = browserHeight - 95;
+	$("#tab_container").css("width",browserWidth).css("height",tab_containerHeight);
+
+	var paneHeight = browserHeight - $("#header").outerHeight() - $("#nav").outerHeight() - $("#footer").outerHeight() - bufferWidth - spacingWidth * 2;
+
+	$("#left_pane").css("width",left_paneWidth).css("left",spacingWidth);
+	$("#center_pane").css("width",center_paneWidth);
+	$("#right_pane").css("width",right_paneWidth).css("right",spacingWidth);
+	$("#left_pane, #center_pane, #right_pane").css("height",paneHeight).css("top",spacingWidth);
+	
+	var center_panePosition = $("#left_pane").outerWidth() + spacingWidth * 2;
+	$("#center_pane").css("left",center_panePosition);
+}
+function set_span_margins() {
+	
+}
